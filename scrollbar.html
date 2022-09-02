@@ -1,0 +1,51 @@
+<!--
+ * @Author: Lesliewaong 1138964397@qq.com
+ * @Date: 2022-09-02 15:53:22
+ * @LastEditors: Lesliewaong 1138964397@qq.com
+ * @LastEditTime: 2022-09-02 16:22:21
+ * @FilePath: \HTML-CSS\scrollbar.html
+ * @Description: scrollbar
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50vw;
+            height: 50vh;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            overflow: auto;
+            scrollbar-width: auto;
+            scrollbar-color: red green;
+        }
+
+        .item {
+            width: 100px;
+            height: 600px;
+            background-color: rgb(196, 25, 25);
+        }
+
+        ::-webkit-scrollbar {
+            height: 0;
+            width: 0;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container scrollbar">
+        <div class="item">123</div>
+        <div class="item">123</div>
+        <div class="item">123</div>
+        <div class="item">123</div>
+    </div>
+</body>
+
+</html>

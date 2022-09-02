@@ -1,0 +1,106 @@
+<!--
+ * @Author: Lesliewaong 1138964397@qq.com
+ * @Date: 2022-09-02 14:54:23
+ * @LastEditors: Lesliewaong 1138964397@qq.com
+ * @LastEditTime: 2022-09-02 15:53:02
+ * @FilePath: \HTML-CSS\object-fit.html
+ * @Description: object-fit
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h2 {
+            font-family: Courier New, monospace;
+            font-size: 10em;
+            margin: 1em 0 0.3em;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        img {
+            width: 1000px;
+            height: 600px;
+            border: 1px solid #000;
+        }
+
+        .narrow {
+            width: 300px;
+            height: 350px;
+            margin-top: 10px;
+        }
+
+        .fill {
+            object-fit: fill;
+        }
+
+        .contain {
+            object-fit: contain;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .none {
+            object-fit: none;
+        }
+
+        .scale-down {
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>object-fit: fill</h2>
+        <img class="fill"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <img class="fill narrow"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <h2>object-fit: contain</h2>
+        <img class="contain"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <img class="contain narrow"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <h2>object-fit: cover</h2>
+        <img class="cover"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <img class="cover narrow"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <h2>object-fit: none</h2>
+        <img class="none"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <img class="none narrow"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <h2>object-fit: scale-down</h2>
+        <img class="scale-down"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+        <img class="scale-down narrow"
+            src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/object-fit/mdn_logo_only_color.png"
+            alt="MDN Logo" />
+    </section>
+</body>
+
+</html>
